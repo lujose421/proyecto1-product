@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ms-customer
+  data:
+    mongodb:
+      uri: mongodb+srv://josephadmin:7pc2I3a1YT2iFJcC@mongodb101.bldukdv.mongodb.net/dbcustomer
+
+#logging:
+#  level:
+#    root: INFO
+#    com.nttdata.customer: DEBUG
+#  file:
+#    name: logs/app.log
+#  pattern:
+#    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+#    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
