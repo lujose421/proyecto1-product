@@ -6,7 +6,7 @@ spring:
     name: ms-customer
   data:
     mongodb:
-      uri: mongodb+srv://josephadmin:7pc2I3a1YT2iFJcC@mongodb101.bldukdv.mongodb.net/dbcustomer
+      uri: mongodb+srv://pacherresfloresjose12:<password>@cluster0.5gmvqd9.mongodb.net/dbcustomer
 
 #logging:
 #  level:
