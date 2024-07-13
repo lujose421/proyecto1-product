@@ -8,20 +8,16 @@ spring:
       import-check:
         enabled: false
   application:
-    name: product
+    name: ms-product
   data:
     mongodb:
-      uri: mongodb+srv://pacherresfloresjose12:pMUdDip0xRP4kiZy@cluster0.5gmvqd9.mongodb.net/dbbank
-#  web:
-#    resources:
-#      add-mappings: false
+      uri: mongodb+srv://josephadmin:7pc2I3a1YT2iFJcC@mongodb101.bldukdv.mongodb.net/dbbank
 
 webclient:
   base-url-customer: http://localhost:8080
 
 springdoc:
   swagger-ui:
-    #    enabled: true
     path: index.html
 
 
@@ -32,16 +28,16 @@ bank:
       maxMonthlyTransactions: 10
     current:
       maintenanceFee: true
-      maxMonthlyTransactions: -1 # -1 indica sin límite
+      maxMonthlyTransactions: -1 
     fixedDeposit:
       maintenanceFee: false
       maxMonthlyTransactions: 1
-      specificTransactionDay: 15 # Ejemplo de un día específico del mes para transacciones
+      specificTransactionDay: 15 
   credits:
     personal:
       maxCreditsPerPerson: 1
     business:
-      maxCreditsPerCompany: -1 # -1 indica sin límite
+      maxCreditsPerCompany: -1 
     creditCard:
       personal:
         allowed: true
