@@ -2,11 +2,21 @@ server:
   port: 8080
 
 spring:
+  cloud:
+    config:
+      enable: false
+      impor-check:
+        enable: false
   application:
-    name: ms-customer
+    name: customer
   data:
     mongodb:
       uri: mongodb+srv://pacherresfloresjose12:<password>@cluster0.5gmvqd9.mongodb.net/dbcustomer
+
+springdoc:
+  swagger-ui:
+    #    enabled: true
+    path: index.html
 
 #logging:
 #  level:
