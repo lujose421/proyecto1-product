@@ -2,9 +2,48 @@ server:
   port: 8081
 
 spring:
+  cloud:
+    config:
+      enabled: false
+      import-check:
+        enabled: false
   application:
     name: product
-
   data:
     mongodb:
-      uri: mongodb+srv://pacherresfloresjose12:pMUdDip0xRP4kiZy@cluster0.5gmvqd9.mongodb.net/dbproduct
+      uri: mongodb+srv://pacherresfloresjose12:pMUdDip0xRP4kiZy@cluster0.5gmvqd9.mongodb.net/dbbank
+#  web:
+#    resources:
+#      add-mappings: false
+
+webclient:
+  base-url-customer: http://localhost:8080
+
+springdoc:
+  swagger-ui:
+    #    enabled: true
+    path: index.html
+
+
+bank:
+  accounts:
+    savings:
+      maintenanceFee: false
+      maxMonthlyTransactions: 10
+    current:
+      maintenanceFee: true
+      maxMonthlyTransactions: -1 # -1 indica sin límite
+    fixedDeposit:
+      maintenanceFee: false
+      maxMonthlyTransactions: 1
+      specificTransactionDay: 15 # Ejemplo de un día específico del mes para transacciones
+  credits:
+    personal:
+      maxCreditsPerPerson: 1
+    business:
+      maxCreditsPerCompany: -1 # -1 indica sin límite
+    creditCard:
+      personal:
+        allowed: true
+      business:
+        allowed: true
